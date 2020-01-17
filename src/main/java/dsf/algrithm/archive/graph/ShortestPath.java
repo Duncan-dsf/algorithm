@@ -164,4 +164,12 @@ public class ShortestPath {
             }
         }
     }
+
+    /**
+     * 队列优化的 Bellman-ford
+     * TODO
+     */
+    static class SPFA {
+
+    }
 }
