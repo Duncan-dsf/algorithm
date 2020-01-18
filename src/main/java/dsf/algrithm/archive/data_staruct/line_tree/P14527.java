@@ -30,7 +30,8 @@ public class P14527 {
 
     public static int getSub(int n) {
 
-        int[] arr = new int[n]
-        while (n > 1)
+//        int[] arr = new int[n]
+//        while (n > 1)
+        return 0;
     }
 }
