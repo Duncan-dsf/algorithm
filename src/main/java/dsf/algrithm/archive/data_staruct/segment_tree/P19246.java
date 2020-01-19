@@ -1,4 +1,4 @@
-package dsf.algrithm.archive.data_staruct.line_tree;
+package dsf.algrithm.archive.data_staruct.segment_tree;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class P19246 {
         while (scanner.hasNextInt()) {
             n = scanner.nextInt();
             int m = scanner.nextInt();
-            tree = new Node[2*n];
+            tree = new Node[4*n];
             arr = new int[n];
             for (int i=0; i<n; i++) {
                 arr[i] = scanner.nextInt();
@@ -172,9 +172,9 @@ public class P19246 {
         if (l <= mid && r > mid) {
             return getMulti(i*2, l, mid) + getMulti(i*2+1, mid+1, r);
         } else if (l > mid) {
-            return getMulti(i*2+1, mid+1, r);
+            return getMulti(i*2+1, l, r);
         } else {
-            return getMulti(i*2, l, mid);
+            return getMulti(i*2, l, r);
         }
     }
 

@@ -1,4 +1,4 @@
-package dsf.algrithm.archive.data_staruct.line_tree;
+package dsf.algrithm.archive.data_staruct.segment_tree;
 
 /**
  * @author : dongshaofei
@@ -10,8 +10,11 @@ package dsf.algrithm.archive.data_staruct.line_tree;
  *
  * https://www.cnblogs.com/jason2003/p/9676729.html
  * https://blog.csdn.net/huangzihaoal/article/details/81813454
+ *
+ * 非递归法 生成的线段树是完全二叉树 tree空间为2n
+ * 递归法 生成的不是完全二叉树 空间需要4n
  */
-public class LineTree {
+public class SegmentTree {
 
 
 }

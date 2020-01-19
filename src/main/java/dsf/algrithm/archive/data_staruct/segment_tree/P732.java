@@ -1,4 +1,4 @@
-package dsf.algrithm.archive.data_staruct.line_tree;
+package dsf.algrithm.archive.data_staruct.segment_tree;
 
 /**
  * https://leetcode-cn.com/problems/my-calendar-iii/
@@ -12,7 +12,7 @@ public class P732 {
 
     class MyCalendarThree {
 
-        int[] tree, arr =
+//        int[] tree, arr =
 
         public MyCalendarThree() {
 
@@ -21,6 +21,7 @@ public class P732 {
 
         public int book(int start, int end) {
 
+            return 0;
         }
     }
 }
