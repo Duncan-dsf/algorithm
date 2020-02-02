@@ -1,4 +1,4 @@
-package dsf.algorithm.leetcode.biweekly.C17;
+package dsf.algorithm.leetcode.biweekly.c17;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author : dongshaofei
  * @version V1.0
  * @Project: algorithm
- * @Package dsf.algorithm.leetcode.biweekly.C17
+ * @Package dsf.algorithm.leetcode.biweekly.c17
  * @Description: TODO
  * @date Date : 2020年01月12日 13:55
  *
