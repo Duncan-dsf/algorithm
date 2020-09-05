@@ -8,7 +8,7 @@ import java.util.List;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.graph.min_tree
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月17日 10:35
  */
 public class MinTree {
@@ -16,7 +16,7 @@ public class MinTree {
     /**
      *
      */
-    public static class Kruskal {
+    static class Kruskal {
 
         private static int[] father;
 

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.sort
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月12日 14:32
  */
 public class QuickSort {

@@ -3,7 +3,7 @@ package dsf.algorithm.archive.data_staruct.list;
 import java.util.Stack;
 
 /**
- * TODO
+ *
  *
  * @author 董少飞
  * @version 1.0
@@ -41,7 +41,7 @@ public class CycleList {
         System.out.println(listNode.val);
     }
 
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 

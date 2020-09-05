@@ -1,9 +1,12 @@
 package dsf.algorithm.test;
 
-import java.util.HashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * TODO
+ *
  *
  * @author 董少飞
  * @version 1.0
@@ -11,14 +14,78 @@ import java.util.HashMap;
  */
 public class Test {
 
-    public static void main(String[] args) {
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
+    public static void main(String[] args) throws InterruptedException {
 
-        map.put("hhhh", 1);
+        ExecutorService executorService = Executors.newCachedThreadPool();
+//        executorService.submit(ConcurrentTest::test);
+//        executorService.submit(ConcurrentTest::test);
+//        executorService.submit(SynchronizedTest::test);
+//        executorService.submit(SynchronizedTest::test);
+        executorService.submit(CASTest::test);
+        executorService.submit(CASTest::test);
 
-        Integer integer = map.get("hhhhh".substring(0, 4));
-        System.out.println(integer);
+        Thread.sleep(1000);
+        executorService.shutdownNow();
+        // 2.6kw
+//        System.out.println(ConcurrentTest.v);
+        // 2.0kw
+//        System.out.println(SynchronizedTest.v);
+        // 5000w
+        System.out.println(CASTest.v.get());
+    }
 
-        System.out.println('A' - 'a');
+
+}
+
+class ConcurrentTest {
+
+    static long v;
+    static ReentrantLock lock = new ReentrantLock();
+    public static void add() {
+        lock.lock();
+        try {
+            v++;
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public static void test() {
+        while (!Thread.interrupted()) {
+            add();
+        }
+    }
+}
+
+class SynchronizedTest {
+
+    static long v;
+    public static void add() {
+        synchronized (SynchronizedTest.class) {
+            v++;
+        }
+    }
+
+    public static void test() {
+        while (!Thread.interrupted()) {
+            add();
+        }
+    }
+}
+
+/**
+ * AtomicInteger 9000w
+ */
+class CASTest {
+
+    static AtomicLong v = new AtomicLong(0);
+    public static void add() {
+
+        v.incrementAndGet();
+    }
+    public static void test() {
+        while (!Thread.interrupted()) {
+            add();
+        }
     }
 }

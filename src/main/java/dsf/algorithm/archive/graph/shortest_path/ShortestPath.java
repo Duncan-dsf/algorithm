@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.graph
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月14日 10:39
  *
  * 最短路径
@@ -53,7 +53,7 @@ public class ShortestPath {
         return graph;
     }
 
-    public static class Dijkstra {
+    private static class Dijkstra {
 
         /**
          * 返回每个点到 源点origin的最短距离
@@ -96,7 +96,7 @@ public class ShortestPath {
     /**
      * 深度优先遍历 求两点间最短路径
      */
-    public static class DFS {
+    private static class DFS {
 
         static int min = Integer.MAX_VALUE;
         static int target = -1;

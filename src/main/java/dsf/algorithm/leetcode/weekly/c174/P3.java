@@ -13,7 +13,7 @@ public class P3 {
     int sum, sub, abs;
     Map<TreeNode, Integer> map = new HashMap<>();
 
-    public class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

@@ -3,7 +3,7 @@ package dsf.algorithm.leetcode.normal;
 import dsf.algorithm.leetcode.weekly.c174.P3;
 
 /**
- * TODO
+ *
  *
  * @author 董少飞
  * @version 1.0
@@ -45,7 +45,7 @@ public class P99 {
         }
     }
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

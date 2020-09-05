@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * TODO
+ *
  *
  * @author 董少飞
  * @version 1.0
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class P133 {
 
-    public static class Node {
+    private static class Node {
         public int val;
         public List<Node> neighbors;
 

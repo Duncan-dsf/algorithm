@@ -5,14 +5,14 @@ package dsf.algorithm.archive.tree;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.tree
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月13日 14:27
  *
  * 恢复树 {leetcode 105 mid} {poj 2255}
  */
 public class Traversal {
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

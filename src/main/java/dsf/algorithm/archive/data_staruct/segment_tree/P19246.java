@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.data_staruct.line_tree
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月17日 16:28
  *
  * 牛客 https://ac.nowcoder.com/acm/problem/19246

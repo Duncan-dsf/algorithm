@@ -10,7 +10,7 @@ package dsf.algorithm.archive.data_staruct.segment_tree;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.data_staruct.segment_tree
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月19日 12:21
  */
 public class P307 {

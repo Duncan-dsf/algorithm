@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @version V1.0
  * @Project: algorithm
  * @Package dsf.algorithm.archive.graph.min_tree
- * @Description: TODO
+ * @Description:
  * @date Date : 2020年01月17日 11:02
  *
  * 牛客 https://ac.nowcoder.com/acm/problem/15108 最小生成树
